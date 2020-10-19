@@ -1,2 +1,2 @@
-# CMakeDemo
-cmake library and usage demo
+# SimpleCMakeDemo
+a simple demo which shows how to build library by cmake tool
