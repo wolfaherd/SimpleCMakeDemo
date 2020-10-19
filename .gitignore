@@ -30,3 +30,10 @@
 *.exe
 *.out
 *.app
+
+ios-build
+ios-demo
+win-build
+win-demo
+android-build
+android-demo
