@@ -7,4 +7,4 @@
 
 ### step2:
 >    read README.md and follow 
->    if not have README.md run cmake-build.sh or cmake-build.bat
+>    if not have README.md directly run cmake-build.sh or cmake-build.bat
