@@ -11,5 +11,8 @@ export SIMPLE_CMAKE_DEMO_OUTPUT=$(pwd)/output/
 
 cmake .. -G Xcode -DCMAKE_TOOLCHAIN_FILE=./ios.toolchain.cmake -DPLATFORM=OS
 
+cmake --build . --config Debug
+cmake --build . --config Release
+
 
 
