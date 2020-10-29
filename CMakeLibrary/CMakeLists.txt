@@ -20,16 +20,14 @@ add_library (PIMediaPlayerExtra SHARED ${SOURCE_FILES})
 
 target_include_directories(PIMediaPlayerExtra PRIVATE ../CMakeLibrary/include)
 
+# 指定库文件输出路径
 if (WIN32)
 	set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/win-build/output/)
 	MESSAGE(STATUS "Now is windows")
-elseif (APPLE)
-	set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/ios-build/output/)
-	MESSAGE(STATUS "Now is Apple systens.")
-elseif (UNIX)
+else()
 	set(OUTPUT_PATH $ENV{SIMPLE_CMAKE_DEMO_OUTPUT})
 	set(LIBRARY_OUTPUT_PATH ${OUTPUT_PATH}/${ANDROID_ABI})
-	MESSAGE(STATUS "Now is UNIX-like OS's.")
+	MESSAGE(STATUS "Now is Other OS's.")
 endif ()
 
 

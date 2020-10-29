@@ -6,6 +6,9 @@
  # @LastEditors: wolf-herd
 ### 
 #!/bin/bash
+
+export SIMPLE_CMAKE_DEMO_OUTPUT=$(pwd)/output/
+
 cmake .. -G Xcode -DCMAKE_TOOLCHAIN_FILE=./ios.toolchain.cmake -DPLATFORM=OS
 
 
