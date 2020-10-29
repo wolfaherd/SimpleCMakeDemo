@@ -6,6 +6,8 @@
  # @LastEditors: wolf-herd
 ### 
 #!/bin/bash
+export SIMPLE_CMAKE_DEMO_OUTPUT=$(pwd)/output/
+
 export NDK_HOME= #use your ndk path
 export PATH=:$PATH #use your cmake bin path
 
